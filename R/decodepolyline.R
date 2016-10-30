@@ -12,7 +12,7 @@
 #' # Decode the compressed polyline
 #' decodepolyline(mymultiroute[[1]]$routepolyline)
 #'
-#' @exports
+#' @export
 
 decodepolyline <- function(encoded) {
   len = stringr::str_length(encoded)

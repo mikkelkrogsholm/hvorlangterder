@@ -278,7 +278,7 @@ POInear <- function(fromaddress = NULL,
 #' # POIs of type pharmacy, lake or coast within default 20km radius of coordinate:
 #' POIradius(fromcoord = "55.69043,12.53527", poitypes = c("pharmacy", "lake", "coast", "forest"))
 #'
-#' @exports
+#' @export
 
 POIradius <- function(fromaddress = NULL,
                       fromcoord = NULL,
@@ -325,7 +325,7 @@ POIradius <- function(fromaddress = NULL,
 #' # Libraries within municiaplity of Copenhagen:
 #' POIwithin(poitypes = "library", municipalcode = 101)
 #'
-#' @exports
+#' @export
 
 POIwithin <- function(poitypes = NULL,
                       bbox = NULL,
@@ -392,7 +392,7 @@ POIwithin <- function(poitypes = NULL,
 #'
 #' decodepolyline(mytsp$steps[[1]]$route_geometry)
 #'
-#' @exports
+#' @export
 
 tsp <- function(fromaddress = NULL,
                 fromcoord = NULL,
