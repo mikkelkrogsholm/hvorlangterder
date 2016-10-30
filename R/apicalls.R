@@ -138,7 +138,7 @@ multiroute <- function(fromaddress = NULL,
   url <- "http://hvorlangterder.dk/multiroute/"
 
   tocoords <- lapply(1:nrow(tocoords), function(i){
-    stringr::str_c(coords$lat[i], coords$lng[i], sep = ",")
+    stringr::str_c(tocoords$lat[i], tocoords$lng[i], sep = ",")
   })
 
   tocoords <- stringr::str_c(tocoords, collapse = " ")
@@ -337,7 +337,7 @@ POIwithin <- function(poitypes = NULL,
 
   if(!is.null(bbox)){
     bbox <- lapply(1:nrow(bbox), function(i){
-      stringr::str_c(coords$lat[i], coords$lng[i], sep = ",")
+      stringr::str_c(tocoords$lat[i], tocoords$lng[i], sep = ",")
     })
 
     bbox <- stringr::str_c(bbox, collapse = " ")
@@ -403,7 +403,7 @@ tsp <- function(fromaddress = NULL,
   url <- "http://hvorlangterder.dk/tsp/"
 
   tocoords <- lapply(1:nrow(tocoords), function(i){
-    stringr::str_c(coords$lat[i], coords$lng[i], sep = ",")
+    stringr::str_c(tocoords$lat[i], tocoords$lng[i], sep = ",")
   })
 
   tocoords <- stringr::str_c(tocoords, collapse = " ")
